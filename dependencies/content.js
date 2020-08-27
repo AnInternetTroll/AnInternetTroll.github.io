@@ -1,5 +1,12 @@
 window.addEventListener('load', function() {
 	var converter = new showdown.Converter();
+	converter.setFlavor('github');
+	converter.setOption('simplifiedAutoLink', true);
+	converter.setOption('strikethrough', true);
+	converter.setOption('tables', true);
+	converter.setOption('tasklists', true);
+	converter.setOption('emoji', true);
+	converter.setOption('underline', true);
 	fetch('article.md').then(response => response.text()).then(function(text) {
 		markdownText = converter.makeHtml(text);
 		var article = document.createElement('ARTICLE');

@@ -8,6 +8,10 @@ body {
 	min-height: 1000px;
 	box-shadow: 0px 10px 10px 10px #303030;
 }
+.container img {
+	height: auto;
+	width:  100%;
+}
 #search {
 	z-index: 200;
 }
@@ -40,4 +44,8 @@ body {
 
 .container a:hover{
 	color: #77a6fb;
+}
+.container .mobilePics{
+	width: 30%;
+	height: auto;
 }
