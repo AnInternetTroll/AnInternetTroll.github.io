@@ -36,6 +36,12 @@ var NavJS = document.createElement("SCRIPT");
 NavJS.setAttribute("src", "/dependencies/nav.js");
 dependencies.appendChild(NavJS);
 
+if (location.pathname.includes("search")) {
+	var SearchJS = document.createElement("SCRIPT");
+	SearchJS.setAttribute("src", "/dependencies/search.js");
+	dependencies.appendChild(SearchJS);
+}
+
 // CSS dependencies
 // External first, then local
 
@@ -60,10 +66,14 @@ fetch('/dependencies/nav.html')
 		dependencies.appendChild(navbar);
 });
 
-if (location.pathname.includes("search")) {
-	var SearchJS = document.createElement("SCRIPT");
-	SearchJS.setAttribute("src", "/dependencies/search.js");
-	dependencies.appendChild(SearchJS);
-}
+// Misc
+var ViewPort = document.createElement("META");
+ViewPort.setAttribute("name", "viewport");
+ViewPort.setAttribute("content", "width=device-width, initial-scale=1.0");
+dependencies.appendChild(ViewPort);
+
+var CharSet = document.createElement("META");
+CharSet.setAttribute("charset", "utf-8");
+dependencies.appendChild(CharSet)
 
 document.body.appendChild(dependencies);
