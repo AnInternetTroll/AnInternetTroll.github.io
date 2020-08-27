@@ -1,10 +1,12 @@
 body {
-	background-color: #000000;
+	background-color: #202020;
 }
 
 .container {
-	background-color: grey;
+	color: #ffffff;
+	background-color: #606060;
 	min-height: 1000px;
+	box-shadow: 0px 10px 10px 10px #303030;
 }
 #search {
 	z-index: 200;
@@ -28,4 +30,11 @@ body {
 }
 #livesearch > a:hover {
 	background-color: grey;
+}
+.container a{
+	color: #57a6fb;
+}
+
+.container a:hover{
+	color: #77a6fb;
 }
