@@ -1,7 +1,5 @@
-query = location.search.substring(3).toLowerCase();
-if (query == 0) {
-	location.replace("/")
-}
+query = new URL(location.href);
+query = query.searchParams.get("q"); 
 var mainResults = document.createElement("DIV");
 // Go through each item and check if it's what the user wants
 var output = "";
