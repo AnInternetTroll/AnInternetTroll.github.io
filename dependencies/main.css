@@ -1,0 +1,31 @@
+body {
+	background-color: #000000;
+}
+
+.container {
+	background-color: grey;
+	min-height: 1000px;
+}
+#search {
+	z-index: 200;
+}
+#livesearch {
+	position: absolute;
+	top: 38px;
+	padding: 5px;
+	color: #ffffff;
+	background-color: #000000;
+	border-radius: 0px 0px 5px 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color:lightskyblue;
+	text-decoration: none;
+	z-index: 10;
+}
+#livesearch>a {
+	color: var(--color);
+	text-decoration: none;
+}
+#livesearch > a:hover {
+	background-color: grey;
+}
