@@ -1,10 +1,12 @@
 [
 	{
-		"title": "home",
-		"url": "/"
+		"title": "Home",
+		"url": "/",
+		"desc": "Home page"
 	},
 	{
-		"title": "about",
-		"url": "/about/"
+		"title": "About",
+		"url": "/about/",
+		"desc": "About stuff"
 	}
 ]

@@ -5,6 +5,7 @@ window.addEventListener('load', function() {
 		var article = document.createElement('ARTICLE');
 		var container = document.createElement('DIV');
 		container.setAttribute('class', 'container');
+		container.setAttribute('id', 'article');
 		container.innerHTML = markdownText;
 		article.appendChild(container);
 		document.body.appendChild(article);

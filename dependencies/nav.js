@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 		// Go through each item and check if it's what the user wants
 		window.output = "";
 		for (i in window.results) {
-			if (window.results[i].title.includes(searchBox.value)) {
+			if (window.results[i].title.toLowerCase().includes(searchBox.value.toLowerCase())) {
 				window.output += `<a href="${window.results[i].url}">${window.results[i].title}</a><br />`;
 				// console.log(window.results[i]);
 			} else {

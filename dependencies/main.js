@@ -31,6 +31,7 @@ var content = document.createElement("SCRIPT");
 content.setAttribute("src", "/dependencies/content.js");
 content.defer = true;
 dependencies.appendChild(content);
+
 var NavJS = document.createElement("SCRIPT");
 NavJS.setAttribute("src", "/dependencies/nav.js");
 dependencies.appendChild(NavJS);
@@ -58,4 +59,11 @@ fetch('/dependencies/nav.html')
 		navbar.innerHTML = text;
 		dependencies.appendChild(navbar);
 });
+
+if (location.pathname.includes("search")) {
+	var SearchJS = document.createElement("SCRIPT");
+	SearchJS.setAttribute("src", "/dependencies/search.js");
+	dependencies.appendChild(SearchJS);
+}
+
 document.body.appendChild(dependencies);
