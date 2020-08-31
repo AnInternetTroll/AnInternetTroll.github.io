@@ -1,7 +1,41 @@
 body {
 	background-color: #202020;
 }
+/* Responsive design 101 */
 
+* {
+	box-sizing: border-box;
+}
+
+/* Main content */
+@media only screen and (min-width:1001px) {
+	div.container {
+		width: 50%;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 30px;
+	}
+}
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+
+@media only screen and (min-width:601px) and (max-width:1000px) {
+	div.container {
+		width: 75%;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 30px;
+	}
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+
+@media only screen and (max-width:600px) {
+	div.container {
+		width: 100%;
+		font-size: 20px;
+	}
+}
 .container {
 	color: #ffffff;
 	background-color: #606060;
@@ -12,10 +46,51 @@ body {
 	height: auto;
 	width:  100%;
 }
-#search {
-	z-index: 200;
+.container a{
+	color: #57a6fb;
 }
-.form-inline {
+
+.container a:hover{
+	color: #77a6fb;
+}
+.container .mobilePics{
+	width: 30%;
+	height: auto;
+}
+/* navbar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .active {
+  background-color: #4CAF50;
+}
+
+/* Search */
+nav form {
 	position: relative;
 }
 #livesearch {
@@ -37,15 +112,4 @@ body {
 }
 #livesearch > a:hover {
 	background-color: grey;
-}
-.container a{
-	color: #57a6fb;
-}
-
-.container a:hover{
-	color: #77a6fb;
-}
-.container .mobilePics{
-	width: 30%;
-	height: auto;
 }

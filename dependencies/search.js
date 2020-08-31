@@ -1,13 +1,13 @@
 query = new URL(location.href);
-query = query.searchParams.get("q").toLowerCase(); 
-var mainResults = document.createElement("DIV");
+query = query.searchParams.get("q").toLowerCase();
+let mainResults = document.createElement("DIV");
 // Go through each item and check if it's what the user wants
-var output = "";
 setTimeout(function() {
-	for (i in window.results) {
-		if (window.results[i].title.toLowerCase().includes(query)) {
-			output += `<h2><a href="${window.results[i].url}">${window.results[i].title}</a></h2><p>${window.results[i].desc}</p>`;
-			console.log(output);
+	let results = window.results;
+	let output = "";
+	for (i in results) {
+		if (results[i].title.toLowerCase().includes(query)) {
+			output += `<h2><a href="${results[i].url}">${results[i].title}</a></h2><p>${results[i].desc}</p>`;
 		} else {
 			output += "";
 		}
@@ -19,11 +19,11 @@ setTimeout(function() {
 		mainResults.innerHTML = "No item could be found";
 		// mainResults.style.display = "none";
 	}
-}, 1000);
+}, 400);
 window.addEventListener("load", function() {
 	setTimeout(function() {
-		var article = document.getElementById("article");
+		let article = document.getElementById("article");
 		article.innerText = "";
 		article.appendChild(mainResults);
-	}, 1000)
+	}, 200);
 });

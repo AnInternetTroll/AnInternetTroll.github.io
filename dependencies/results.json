@@ -1,12 +1,9 @@
-[
-	{
-		"title": "Home",
-		"url": "/",
-		"desc": "Home page"
-	},
-	{
-		"title": "About",
-		"url": "/about/",
-		"desc": "About stuff"
-	}
-]
+[{
+	"title": "Home",
+	"url": "/",
+	"desc": "Home page"
+}, {
+	"title": "Portofolio",
+	"url": "/Portofolio/",
+	"desc": "Portofolio to get me a job when I grow up"
+}]

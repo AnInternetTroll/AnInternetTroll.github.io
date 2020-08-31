@@ -1,37 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="/">
-				<img alt="" class="d-inline-block align-top" height="30" src="/favicon.ico" width="30">
-						Luca Inc.
-				</img>
+<ul>
+	<li>
+		<a class="active" href="/">
+			Home
 		</a>
-		<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-				<span class="navbar-toggler-icon">
-				</span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-								<a class="nav-link" href="/">
-										Home
-										<span class="sr-only">
-												(current)
-										</span>
-								</a>
-						</li>
-						<li class="nav-item">
-								<a class="nav-link" href="/about/">
-										About
-								</a>
-						</li>
-				</ul>
-				<form action="/search/" class="form-inline my-2 my-lg-0" method="get">
-						<input aria-label="Search" autocomplete="off" class="form-control mr-sm-2" id="searchBox" name="q" placeholder="Search" required="" type="search">
-								<div class="livesearch" id="livesearch" style="display:none;">
-								</div>
-								<button class="btn btn btn-success my-2 my-sm-0" type="submit">
-										Search
-								</button>
-						</input>
-				</form>
-		</div>
-</nav>
+	</li>
+	<li>
+		<a href="/portofolio/">
+			Portofolio
+		</a>
+	</li>
+	<li>
+		<form action="/search/" method="get">
+			<input autocomplete="off" id="searchBox" name="q" placeholder="Search" required="" type="search"/>
+			<div class="livesearch" id="livesearch" style="display:none;">
+			</div>
+			<button type="submit">
+				Search
+			</button>
+		</form>
+	</li>
+</ul>

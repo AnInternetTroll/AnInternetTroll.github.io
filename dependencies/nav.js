@@ -1,7 +1,7 @@
 fetch("/dependencies/results.json").then(response => response.json()).then(data => window.results = data);
 window.addEventListener("load", function() {
-	var searchBox = document.getElementById("searchBox");
-	var resultBox = document.getElementById("livesearch");
+	let searchBox = document.getElementById("searchBox");
+	let resultBox = document.getElementById("livesearch");
 	searchBox.addEventListener("input", function() {
 		// console.log(searchBox.value);
 
