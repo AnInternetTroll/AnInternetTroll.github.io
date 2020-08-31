@@ -1,3 +1,34 @@
+// VERY IMPORTANT EARLY STUFF
+fetch("/dependencies/results.json").then(response => response.json()).then(data => window.results = data).then(function(data) {
+	let currentPage = window.results[location.pathname];
+	// Title
+	let titlePage = document.createElement("TITLE");
+	titlePage.innerText = currentPage.title;
+	document.body.appendChild(titlePage);
+	// Embed stuff
+	// Title (again)
+	let embedTitle = document.createElement("META");
+	embedTitle.setAttribute("property", "og:title");
+	embedTitle.setAttribute("content", currentPage.title);
+	document.head.appendChild(embedTitle);
+	// Description
+	let embedDescription = document.createElement("META");
+	embedDescription.setAttribute("property", "og:description");
+	embedDescription.setAttribute("content", currentPage.desc);
+	document.head.appendChild(embedDescription);
+	// Image 
+	if (currentPage.img){
+		let embedImage = document.createElement("META");
+		embedImage.setAttribute("property", "og:image");
+		embedImage.setAttribute("content", currentPage.img);
+		document.head.appendChild(embedImage);
+	}
+	// URL
+	let embedUrl = document.createElement("META");
+	embedUrl.setAttribute("property", "og:url");
+	embedUrl.setAttribute("content", location.href);
+	document.head.appendChild(embedUrl);
+});
 // Dependency object that everything else 
 // should be thrown into
 let dependencies = document.createElement("dependencies");
@@ -41,5 +72,5 @@ ViewPort.setAttribute("content", "width=device-width, initial-scale=1.0");
 dependencies.appendChild(ViewPort);
 let CharSet = document.createElement("META");
 CharSet.setAttribute("charset", "utf-8");
-dependencies.appendChild(CharSet)
+dependencies.appendChild(CharSet);
 document.body.appendChild(dependencies);

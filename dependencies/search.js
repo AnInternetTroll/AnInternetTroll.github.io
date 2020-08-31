@@ -6,10 +6,12 @@ setTimeout(function() {
 	let results = window.results;
 	let output = "";
 	for (i in results) {
-		if (results[i].title.toLowerCase().includes(query)) {
-			output += `<h2><a href="${results[i].url}">${results[i].title}</a></h2><p>${results[i].desc}</p>`;
-		} else {
-			output += "";
+		if (window.results[i].hidden != true) {
+			if (results[i].title.toLowerCase().includes(query)) {
+				output += `<h2><a href="${results[i].url}">${results[i].title}</a></h2><p>${results[i].desc}</p>`;
+			} else {
+				output += "";
+			}
 		}
 	}
 	if (output.length != 0) {

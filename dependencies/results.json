@@ -1,9 +1,21 @@
-[{
-	"title": "Home",
-	"url": "/",
-	"desc": "Home page"
-}, {
-	"title": "Portofolio",
-	"url": "/Portofolio/",
-	"desc": "Portofolio to get me a job when I grow up"
-}]
+{
+	"/": {
+		"title": "Home",
+		"url": "/",
+		"desc": "Home page",
+		"img": "/favicon.ico",
+		"hidden": false
+	},
+	"/portofolio/": {
+		"title": "Portofolio",
+		"url": "/portofolio/",
+		"desc": "Portofolio to get me a job when I grow up",
+		"hidden": false
+	},
+	"/search/": {
+		"title": "Search",
+		"url": "/search/",
+		"desc": "Search page, HEY, YOU SHOULDN'T BE HERE",
+		"hidden": true
+	}
+}
