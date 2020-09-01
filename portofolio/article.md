@@ -20,6 +20,7 @@
 
 ### Website
 This very website is open source and available on github. It uses frameworks such as bootstrap and is built on PHP. [The same technology that pornhub is build on](https://www.reddit.com/r/IAmA/comments/kf4be/nsfw_iama_former_lead_developer_of_pornhub_amaa/c2jro1x/?context=3)
+This website also uses other various web development technologies such as HTML and CSS
   
   
 ![Comment in textbox](website_1.png)  
