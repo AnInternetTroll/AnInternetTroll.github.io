@@ -2,7 +2,7 @@ query = new URL(location.href);
 query = query.searchParams.get("q").toLowerCase();
 let mainResults = document.createElement("DIV");
 // Go through each item and check if it's what the user wants
-setTimeout(function() {
+setTimeout(function () {
 	let results = window.results;
 	let output = "";
 	for (i in results) {
@@ -22,8 +22,8 @@ setTimeout(function() {
 		// mainResults.style.display = "none";
 	}
 }, 400);
-window.addEventListener("load", function() {
-	setTimeout(function() {
+window.addEventListener("load", function () {
+	setTimeout(function () {
 		let article = document.getElementById("article");
 		article.innerText = "";
 		article.appendChild(mainResults);

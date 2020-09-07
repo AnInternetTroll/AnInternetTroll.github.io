@@ -8,7 +8,7 @@ body {
 }
 
 /* Main content */
-@media only screen and (min-width:1001px) {
+@media only screen and (min-width: 1001px) {
 	div.container {
 		width: 50%;
 		margin-right: auto;
@@ -19,7 +19,7 @@ body {
 
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 
-@media only screen and (min-width:601px) and (max-width:1000px) {
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
 	div.container {
 		width: 75%;
 		margin-right: auto;
@@ -30,7 +30,7 @@ body {
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
 	div.container {
 		width: 100%;
 		font-size: 20px;
@@ -44,49 +44,49 @@ body {
 }
 .container img {
 	height: auto;
-	width:  100%;
+	width: 100%;
 }
-.container a{
+.container a {
 	color: #57a6fb;
 }
 
-.container a:hover{
+.container a:hover {
 	color: #77a6fb;
 }
-.container .mobilePics{
+.container .mobilePics {
 	width: 30%;
 	height: auto;
 }
 /* navbar */
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
 }
 
 nav li {
-  float: left;
+	float: left;
 }
 
 nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: #111;
+	background-color: #111;
 }
 
 nav .active {
-  background-color: #4CAF50;
+	background-color: #4caf50;
 }
 
 /* Search */
@@ -102,11 +102,11 @@ nav form {
 	border-radius: 0px 0px 5px 5px;
 	border-style: solid;
 	border-width: thin;
-	border-color:lightskyblue;
+	border-color: lightskyblue;
 	text-decoration: none;
 	z-index: 10;
 }
-#livesearch>a {
+#livesearch > a {
 	color: white;
 	text-decoration: none;
 }
