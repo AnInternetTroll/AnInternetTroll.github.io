@@ -4,18 +4,8 @@ This website is fully done in plain HTML/CSS/JavaScript with no server side lang
 
 ## Testing
 
-To test locally you can either put this folder in an apache server or you can run a test server using `server.js`. To do that you need:
+To test locally you can either put this folder in an apache server or you can run a development server with the `http.server` python module (`python -m http.server PORT`) or with PHP (`php -S 0.0.0.0:PORT`)
 
-- Node.js
-- npm
-  First install the dependencies
+## Development
 
-```bash
-npm install
-```
-
-then run it
-
-```bash
-npm start
-```
+To format the code it is recommended to run `npm run format` as this will use Prettier and the configuration set in `package.json` to format all the code in this repo.

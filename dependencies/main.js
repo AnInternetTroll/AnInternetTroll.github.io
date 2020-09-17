@@ -32,6 +32,20 @@ fetch("/dependencies/results.json")
 		embedUrl.setAttribute("content", location.href);
 		document.head.appendChild(embedUrl);
 	});
+if ("serviceWorker" in navigator) {
+	// Register a service worker hosted at the root of the
+	// site using the default scope.
+	navigator.serviceWorker.register("/sw.js").then(
+		function (registration) {
+			console.log("Service worker registration succeeded:", registration);
+		},
+		/*catch*/ function (error) {
+			console.log("Service worker registration failed:", error);
+		}
+	);
+} else {
+	console.log("Service workers are not supported.");
+}
 // Dependency object that everything else
 // should be thrown into
 let dependencies = document.createElement("dependencies");
@@ -85,5 +99,9 @@ ViewPort.setAttribute("content", "width=device-width, initial-scale=1.0");
 dependencies.appendChild(ViewPort);
 let CharSet = document.createElement("META");
 CharSet.setAttribute("charset", "utf-8");
-dependencies.appendChild(CharSet);
+document.head.appendChild(CharSet);
+let Manifest = document.createElement("LINK");
+Manifest.setAttribute("rel", "manifest");
+Manifest.setAttribute("href", "/manifest.json");
+document.head.appendChild(Manifest);
 document.body.appendChild(dependencies);

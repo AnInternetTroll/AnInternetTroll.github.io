@@ -1,0 +1,33 @@
+{
+	"short_name": "Luca's website",
+	"name": "Luca's website, a portofolio of a ~dreamer~",
+	"description": "A website that presents Luca's achievements",
+	"icons": [
+		{
+			"src": "/images/logo.png",
+			"type": "image/png",
+			"sizes": "420x420"
+		}
+	],
+	"start_url": "/?source=pwa",
+	"background_color": "#606060",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#1894ff",
+	"shortcuts": [
+		{
+			"name": "Main page",
+			"short_name": "Home",
+			"description": "The main index of other pages on this website",
+			"url": "/?source=pwa",
+			"icons": [{ "src": "/images/logo.png", "sizes": "420x420" }]
+		},
+		{
+			"name": "What has Luca been up to?",
+			"short_name": "Portofolio",
+			"description": "The portofolio for stuff",
+			"url": "/portofolio/?source=pwa",
+			"icons": [{ "src": "/images/logo.png", "sizes": "420x420" }]
+		}
+	]
+}

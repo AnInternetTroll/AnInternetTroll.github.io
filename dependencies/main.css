@@ -53,9 +53,9 @@ body {
 .container a:hover {
 	color: #77a6fb;
 }
-.container .mobilePics {
-	width: 30%;
-	height: auto;
+.container .mobilePics img {
+	width: 50%;
+	display: inline;
 }
 /* navbar */
 nav ul {
@@ -67,6 +67,7 @@ nav ul {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 nav li {
