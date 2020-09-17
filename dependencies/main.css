@@ -74,6 +74,10 @@ nav li {
 	float: left;
 }
 
+nav li.right {
+	float: right;
+}
+
 nav li a {
 	display: block;
 	color: white;
@@ -88,6 +92,11 @@ nav li a:hover {
 
 nav .active {
 	background-color: #4caf50;
+}
+
+#preferanceBtn {
+	width: 100%;
+	height: 100%;
 }
 
 /* Search */

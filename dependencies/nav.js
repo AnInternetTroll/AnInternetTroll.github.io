@@ -29,3 +29,11 @@ window.addEventListener("load", function () {
 		}
 	});
 });
+let preferanceBtn = document.getElementById("preferanceBtn");
+preferanceBtn.addEventListener("click", function () {
+	if (preferanceBtn.innerText == "Dark") {
+		preferanceBtn.innerText = "Light";
+	} else {
+		preferanceBtn.innerText = "Dark";
+	}
+});
